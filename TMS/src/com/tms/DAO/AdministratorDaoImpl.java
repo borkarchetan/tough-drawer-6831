@@ -25,7 +25,7 @@ public class AdministratorDaoImpl implements AdministratorDao {
 		try (Connection con = DBUtil.provideConnection()) {
 
 			PreparedStatement ps = con
-					.prepareStatement("select * from administrator where adminUserName = ? AND adminPassword = ?");
+					.prepareStatement("select * from Administrator where adminUserName = ? AND adminPassword = ?");
 			ps.setString(1, adminUserName);
 			ps.setString(2, adminPassword);
 
@@ -110,7 +110,7 @@ public class AdministratorDaoImpl implements AdministratorDao {
 		try (Connection con = DBUtil.provideConnection()) {
 
 			PreparedStatement ps = con.prepareStatement(
-					"insert into tender(tdrName, tdrType, tdrAmount,  tdrDeadline, tdrAddress) values(?, ?, ?, ?, ?, ?)");
+					"insert into tender(tdrName, tdrType, tdrAmount,  tdrDeadline, tdrAddress) values( ?, ?, ?, ?, ?)");
 
 			ps.setString(1, tender.getTdrName());
 			ps.setString(2, tender.getTdrType());
@@ -192,7 +192,7 @@ public class AdministratorDaoImpl implements AdministratorDao {
 		try (Connection con = DBUtil.provideConnection()) {
 
 			PreparedStatement ps = con
-					.prepareStatement("select * from tenderstatus where tdrId=? AND tsVdrId =?");
+					.prepareStatement("select * from tenderstatus where tsTdrId=? AND tsVdrId =?");
 			ps.setInt(1, tdrId);
 			ps.setInt(2, vdrId);
 

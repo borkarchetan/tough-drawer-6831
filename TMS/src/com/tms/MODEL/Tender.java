@@ -14,14 +14,14 @@ public class Tender {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Tender(String tdrName, String ttype, int tamount, String tdeadline, String taddress) {
+	public Tender(String tdrName, String tdrType, int tdrAmount, String tdrDeadline, String tdrAddress) {
 		super();
 
 		this.tdrName = tdrName;
-		this.tdrType = ttype;
-		this.tdrAmount = tamount;
-		this.tdrDeadline = tdeadline;
-		this.tdrAddress = taddress;
+		this.tdrType = tdrType;
+		this.tdrAmount = tdrAmount;
+		this.tdrDeadline = tdrDeadline;
+		this.tdrAddress = tdrAddress;
 	}
 
 	public Tender(int tdrId, String tdrName, String tdrType, int tdrAmount, String tdrDeadline, String tdrAddress) {

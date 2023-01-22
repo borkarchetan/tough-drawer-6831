@@ -11,12 +11,12 @@ public class Main {
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println();
-		System.out.println(" ====================== WELCOME TO RK TENDER MANAGEMENT STYSTEM ====================== ");
+		System.out.println(" ====================== TENDER MANAGEMENT STYSTEM ====================== ");
 		System.out.println();
 		while (true) {
 
 			System.out.println("==================================================================");
-			System.out.println("*                                                           +");
+			System.out.println("                                                           ");
 
 			System.out.println("ENTER 1 : ADMINISTRATOR LOGIN");
 

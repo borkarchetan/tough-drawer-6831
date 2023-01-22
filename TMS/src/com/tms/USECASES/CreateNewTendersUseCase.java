@@ -19,25 +19,25 @@ public class CreateNewTendersUseCase {
 		String tdrName = sc.next();
 
 		System.out.println("Enter tender type: ");
-		String ttype = sc.next();
+		String tdrType = sc.next();
 
 		System.out.println("Enter tender price: ");
-		int tprice = sc.nextInt();
+		int tdrAmount = sc.nextInt();
 
-		System.out.println("Enter tender Description: ");
-		String tdesc = sc.nextLine();
+//		System.out.println("Enter tender Description: ");
+//		String tdesc = sc.nextLine();
 
 		sc.nextLine();
 		System.out.println("dd-mm-yyyy");
 
-		String tdeadline = sc.nextLine();
+		String tdrDeadline = sc.nextLine();
 
 		System.out.println("Enter tender location: ");
-		String tloc = sc.next();
+		String tdrAddress = sc.next();
 
 		try {
 
-			String str = admin.CreateNewTenders(new Tender(tdrName, ttype, tprice, tdeadline, tloc));
+			String str = admin.CreateNewTenders(new Tender(tdrName, tdrType, tdrAmount, tdrDeadline, tdrAddress));
 			System.out.println(str);
 
 		} catch (Exception e) {

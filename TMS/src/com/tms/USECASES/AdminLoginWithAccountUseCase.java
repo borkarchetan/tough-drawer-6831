@@ -49,7 +49,7 @@ public class AdminLoginWithAccountUseCase {
 					switch (num) {
 
 					case 1:
-						AdminLoginWithAccountUseCase.main(args);
+						RegisterNewVendorDetailsUseCases.main(args);
 						break;
 					case 2:
 						ViewAllVendorsDetailsUseCase.main(args);
