@@ -15,25 +15,25 @@ public class CreateNewTendersUseCase {
 
 		AdministratorDao admin = new AdministratorDaoImpl();
 
-		System.out.println("Enter tender name: ");
-		String tdrName = sc.next();
+		System.out.println("Enter Tender Name : ");
+		String tdrName = sc.nextLine();
 
-		System.out.println("Enter tender type: ");
-		String tdrType = sc.next();
+		System.out.println("Enter Tender Type : ");
+		String tdrType = sc.nextLine();
 
-		System.out.println("Enter tender price: ");
+		System.out.println("Enter Tender Amount : ");
 		int tdrAmount = sc.nextInt();
 
 //		System.out.println("Enter tender Description: ");
 //		String tdesc = sc.nextLine();
 
 		sc.nextLine();
-		System.out.println("dd-mm-yyyy");
-
+		System.out.println("Enter Tender DeadLine" + " YYYY-MM-DD");
 		String tdrDeadline = sc.nextLine();
 
-		System.out.println("Enter tender location: ");
-		String tdrAddress = sc.next();
+//		
+		System.out.println("Enter tender Address: ");
+		String tdrAddress = sc.nextLine();
 
 		try {
 

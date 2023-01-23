@@ -11,7 +11,7 @@ public class ViewStatusOfBidUseCase {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Enter your Bidder id: ");
+		System.out.println("Enter Your Bidder ID : ");
 		int bid = sc.nextInt();
 
 		VendorDao vendor = new VendorDaoImpl();

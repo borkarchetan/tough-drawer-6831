@@ -13,20 +13,24 @@ public class AssignTendorToVendorUseCases {
 
 		AdministratorDao admin = new AdministratorDaoImpl();
 
-		System.out.println("Enter tendor id : ");
+		System.out.println("Enter Tendor ID : ");
 		int tid = sc.nextInt();
 
-		System.out.println("Enter vendor id : ");
+		System.out.println("Enter Vendor ID : ");
 		int vid = sc.nextInt();
 
-		System.out.println("Enter bidder id : ");
+		System.out.println("Enter Bidder ID : ");
 		int bid = sc.nextInt();
 
 		try {
+
 			String str = admin.assignTendorToVendor(tid, vid, bid);
 			System.out.println(str);
+
 		} catch (Exception e) {
+
 			System.out.println(e.getMessage());
+
 		}
 
 	}

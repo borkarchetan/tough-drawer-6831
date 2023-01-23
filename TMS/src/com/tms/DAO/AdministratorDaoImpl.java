@@ -115,8 +115,8 @@ public class AdministratorDaoImpl implements AdministratorDao {
 			ps.setString(1, tender.getTdrName());
 			ps.setString(2, tender.getTdrType());
 			ps.setInt(3, tender.getTdrAmount());
-			ps.setString(4, tender.getTdrAddress());
-			ps.setString(5, tender.getTdrDeadline());
+			ps.setString(4, tender.getTdrDeadline());
+			ps.setString(5, tender.getTdrAddress());
 			int result = ps.executeUpdate();
 
 			if (result > 0) {
