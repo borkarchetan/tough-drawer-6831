@@ -24,14 +24,10 @@ public class CreateNewTendersUseCase {
 		System.out.println("Enter Tender Amount : ");
 		int tdrAmount = sc.nextInt();
 
-//		System.out.println("Enter tender Description: ");
-//		String tdesc = sc.nextLine();
-
 		sc.nextLine();
 		System.out.println("Enter Tender DeadLine" + " YYYY-MM-DD");
 		String tdrDeadline = sc.nextLine();
 
-//		
 		System.out.println("Enter tender Address: ");
 		String tdrAddress = sc.nextLine();
 
